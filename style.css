@@ -1,4 +1,4 @@
-html{
+html {
     overflow-x: hidden;
 }
 
@@ -8,29 +8,30 @@ html{
 }
 
 .graybar {
-    display:grid;
-    place-items:center;
+    flex-direction: row;
+    justify-content:space-evenly;
+    display: flex;
+    place-items: center;
     background:#696969;
     height: 400px;
     margin: -10px;
-    padding: 20px;
+    padding-left:20px;
+    padding-right:20px;
+    text-shadow: #48abe0 0 0 0px;
+    box-shadow: 0 0 0px 0px #48abe0;
 }
 
-.hidden {
-    opacity: 0;
-    transition: all 1s;
-}
-
-.show {
-    opacity: 1;
+.graybar-caption {
+    font-family: "Liberation Sans";
+    color: white;
 }
 
 .topbar {
-    background:#566987;
+    background: #566987;
     margin: -10px;
     padding: 20px;
     font-size: 15pt;
-    font-family:Arial, Helvetica, sans-serif
+    font-family: Arial
 }
 
 .topbar-link {
@@ -47,6 +48,8 @@ html{
     font-size: 90pt;
     font-family: "Liberation Sans";
     margin:10px;
+    margin-left:-10px;
+    margin-right:-10px;
     text-align:center;
     padding-top:380px;
     padding-bottom:380px;
@@ -76,5 +79,20 @@ html{
 
     100% {
         transform: scale(1.2);
+    }
+}
+
+@keyframes gray-glow {
+    0% {
+        text-shadow: #48abe0 0 0 var(--a, 0px);
+        box-shadow: 0 0 0px 0px #48abe0;
+    }
+    50% {
+        text-shadow: #48abe0 0 0 10px;
+        box-shadow: 0 0 50px 15px #48abe0;
+    }
+    100% {
+        text-shadow: #48abe0 0 0 10px;
+        box-shadow: 0 0 50px 15px #48abe0;
     }
 }
