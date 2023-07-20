@@ -8,9 +8,21 @@ html{
 }
 
 .graybar {
+    display:grid;
+    place-items:center;
     background:#696969;
+    height: 400px;
     margin: -10px;
     padding: 20px;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
 }
 
 .topbar {
@@ -36,8 +48,8 @@ html{
     font-family: "Liberation Sans";
     margin:10px;
     text-align:center;
-    padding-top:200px;
-    padding-bottom:200px;
+    padding-top:380px;
+    padding-bottom:380px;
 }
 
 @keyframes title-anim {
