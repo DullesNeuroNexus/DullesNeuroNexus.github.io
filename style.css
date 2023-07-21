@@ -31,7 +31,9 @@ html {
     margin: -10px;
     padding: 20px;
     font-size: 15pt;
-    font-family: Arial
+    font-family: Arial;
+
+    z-index: 999;
 }
 
 .topbar-link {
@@ -48,11 +50,11 @@ html {
     font-size: 90pt;
     font-family: "Liberation Sans";
     margin:10px;
-    margin-left:-10px;
-    margin-right:-10px;
+    margin-left:-300px;
+    margin-right:-300px;
     text-align:center;
-    padding-top:380px;
-    padding-bottom:380px;
+    padding-top:100px;
+    padding-bottom:100px;
 }
 
 @keyframes title-anim {
@@ -69,30 +71,5 @@ html {
 
     100% {
         color:white;
-    }
-}
-
-@keyframes topbar-anim {
-	0% {
-        transform: scale(1);
-	}
-
-    100% {
-        transform: scale(1.2);
-    }
-}
-
-@keyframes gray-glow {
-    0% {
-        text-shadow: #48abe0 0 0 var(--a, 0px);
-        box-shadow: 0 0 0px 0px #48abe0;
-    }
-    50% {
-        text-shadow: #48abe0 0 0 10px;
-        box-shadow: 0 0 50px 15px #48abe0;
-    }
-    100% {
-        text-shadow: #48abe0 0 0 10px;
-        box-shadow: 0 0 50px 15px #48abe0;
     }
 }
