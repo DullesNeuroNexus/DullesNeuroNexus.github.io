@@ -6,6 +6,7 @@ var grayglow = 0;
 var t = document.getElementById('title')
 var g = document.getElementById('graybar')
 
+
 function repeatWhileMouseOver(element, action, deaction) {
     var interval = null;
     element.addEventListener('mouseover', function() {
@@ -21,15 +22,15 @@ function repeatWhileMouseOver(element, action, deaction) {
 
 function titleglowup() {
     if (titleglow < 20) {titleglow++;}
-    t.style.boxShadow = "-20px 0 "+String(titleglow/1.5>>0)+"px "+String(titleglow/1.5>>0)+"px #48abe0";
+    t.style.boxShadow = "-20px 0 "+String(titleglow**1.1/2)+"px "+String(titleglow**1.1/2)+"px #48abe0";
     t.style.textShadow = "#48abe0 0 0 "+String(titleglow)+"px";
-    t.style.letterSpacing = String((((6.7-((titleglow-20)**2)/70)*10)>>0)/10)+"px";
+    t.style.letterSpacing = String((6-((titleglow-20)**2)/68))+"px";
 }
 function titleglowdown() {
     if (titleglow > 0) {titleglow--;}
-    t.style.boxShadow = "-20px 0 "+String(titleglow/1.5>>0)+"px "+String(titleglow/1.5>>0)+"px #48abe0";
+    t.style.boxShadow = "-20px 0 "+String(titleglow**1.1/2)+"px "+String(titleglow**1.1/2)+"px #48abe0";
     t.style.textShadow = "#48abe0 0 0 "+String(titleglow)+"px";
-    t.style.letterSpacing = String(1.1**titleglow) + "px";
+    t.style.letterSpacing = String(((titleglow)**2)/66) + "px";
 }
 
 function grayglowup() {
