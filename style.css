@@ -16,6 +16,7 @@ html {
 }
 
 .topbar-right {
+    top:5px;
     right:0;
     position:absolute;
     margin-right:70px;
