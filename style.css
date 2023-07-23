@@ -7,7 +7,7 @@ html {
     src: url('LiberationSans-Regular.ttf');
 }
 
-.top-placeholder {
+#top-placeholder {
     background:#566987;
     height: 15px;
     padding: 10px;
@@ -22,7 +22,7 @@ html {
     margin-right:70px;
 }
 
-.topbar {
+#topbar {
     background: #566987;
     margin: -10px;
     padding: 30px;
@@ -64,7 +64,7 @@ html {
     color: white;
 }
 
-.graybar {
+#graybar {
     flex-direction: row;
     justify-content:space-evenly;
     display: flex;
