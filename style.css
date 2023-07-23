@@ -8,34 +8,29 @@ html {
 }
 
 .top-placeholder {
-
-}
-
-.graybar {
-    flex-direction: row;
-    justify-content:space-evenly;
-    display: flex;
-    place-items: center;
-    background:#696969;
-    height: 400px;
+    background:#566987;
+    height: 15px;
+    padding: 10px;
     margin: -10px;
-    padding-left:20px;
-    padding-right:20px;
-    text-shadow: #48abe0 0 0 0px;
-    box-shadow: 0 0 0px 0px #48abe0;
+    z-index:-1;
 }
 
-.graybar-caption {
-    font-family: "Liberation Sans";
-    color: white;
+.topbar-right {
+    right:0;
+    position:absolute;
+    margin-right:70px;
 }
 
 .topbar {
     background: #566987;
     margin: -10px;
-    padding: 20px;
+    padding: 30px;
     font-size: 15pt;
     font-family: Arial;
+    position: sticky;
+    top:-1px;
+    z-index:10;
+    display:flex;
 }
 
 .topbar-link {
@@ -61,6 +56,25 @@ html {
     background-position:50%;
     background-size:30%;
     background-repeat: repeat-x;
+}
+
+.graybar-caption {
+    font-family: "Liberation Sans";
+    color: white;
+}
+
+.graybar {
+    flex-direction: row;
+    justify-content:space-evenly;
+    display: flex;
+    place-items: center;
+    background:#696969;
+    height: 400px;
+    margin: -10px;
+    padding-left:20px;
+    padding-right:20px;
+    text-shadow: #48abe0 0 0 0px;
+    box-shadow: 0 0 0px 0px #48abe0;
 }
 
 @keyframes title-anim {
