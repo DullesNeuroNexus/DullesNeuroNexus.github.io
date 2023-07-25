@@ -30,7 +30,7 @@ html {
     font-family: Arial;
     position: sticky;
     top:-1px;
-    z-index:10;
+    z-index:2;
     display:flex;
 }
 
@@ -45,6 +45,8 @@ html {
 
 #title {
     animation: title-anim 1.6s ease 0s 1 normal forwards;
+    position:relative;
+    z-index:1;
     font-size: 90pt;
     font-family: "Liberation Sans";
     margin:10px;
@@ -66,10 +68,11 @@ html {
 
 #graybar {
     flex-direction: row;
+    position:relative;
     justify-content:space-evenly;
     display: flex;
     place-items: center;
-    background:#696969;
+    background:#6969aa;
     height: 400px;
     margin: -10px;
     padding-left:20px;
@@ -78,6 +81,35 @@ html {
     box-shadow: 0 0 0px 0px #48abe0;
 }
 
+#placeholder2 {
+    height:20px;
+    background: #1040aa;
+    padding:10px;
+    margin:-10px;
+    z-index:-1;
+}
+
+#meetandcatch {
+    font-family: "Liberation Sans";
+    text-align:center;
+    padding:10px;
+    font-size:50px;
+    background:#47acd7;
+    margin:-30px;
+    margin-top:10px;
+}
+
+.mclink:link {
+    color:#ababff;
+}
+
+.mclink:visited {
+    color:white;
+}
+
+.mclink:hover {
+    color:#000;
+}
 @keyframes title-anim {
 	0% {
 		opacity: 0;
