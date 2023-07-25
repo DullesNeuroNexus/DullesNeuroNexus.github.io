@@ -100,7 +100,7 @@ html {
 }
 
 .mclink:link {
-    color:#ababff;
+    color:#bbf3ff;
 }
 
 .mclink:visited {
@@ -108,7 +108,7 @@ html {
 }
 
 .mclink:hover {
-    color:#000;
+    color:#530b63;
 }
 @keyframes title-anim {
 	0% {
