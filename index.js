@@ -1,4 +1,4 @@
-console.log('app.js imported');
+console.log('index.js imported');
 
 var titleglow = 0;
 var grayglow = 0;
