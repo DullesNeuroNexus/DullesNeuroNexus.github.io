@@ -140,19 +140,13 @@ html {
     color:#fff;
 }
 
-#about-graybar {
+#members {
     flex-direction: row;
     position:relative;
     justify-content:space-evenly;
     display: flex;
-    place-items: center;
     background:#6969aa;
     height: 400px;
-    margin: -10px;
-    padding-left:20px;
-    padding-right:20px;
-    text-shadow: #48abe0 0 0 0px;
-    box-shadow: 0 0 0px 0px #48abe0;
 }
 
 @keyframes about-anim {
