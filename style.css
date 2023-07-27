@@ -134,19 +134,19 @@ html {
     z-index:1;
     font-size: 80pt;
     font-family: "Liberation Sans";
-    margin-left:-300px;
-    margin-right:-300px;
     text-align:center;
     color:#fff;
 }
 
 #members {
     flex-direction: row;
+    width:90%;
+    margin: 0 auto;
     position:relative;
     justify-content:space-evenly;
     display: flex;
     background:#6969aa;
-    height: 400px;
+    height: 400px; /*placeholder*/
 }
 
 @keyframes about-anim {
