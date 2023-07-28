@@ -4,12 +4,12 @@ html {
 
 @font-face {
     font-family: "Raleway Light";
-    src: url('Raleway-Light.ttf');
+    src: url('media/fonts/Raleway-Light.ttf');
 }
 
 @font-face {
     font-family: "Liberation Sans";
-    src: url('LiberationSans-Regular.ttf');
+    src: url('media/fonts/LiberationSans-Regular.ttf');
 }
 
 #top-placeholder {
@@ -153,13 +153,15 @@ html {
     position: relative;
     background: #6969aa;
     padding: 20px;
+    border-radius:12px;
 }
 
 .gridtext-div {
     background-color:#fff;
     border-radius: 15px;
-    min-height: 200px;
+    min-height: 250px;
     border: 2px solid;
+    position:relative;
 }
 .gridtext-name {
     font-family: "Liberation Sans";
@@ -169,6 +171,20 @@ html {
     font-family: 'Raleway Light';
     margin-left: 10px;
     margin-bottom: -20px;
+}
+.gridtext-desc {
+    font-family: 'Raleway Light';
+    margin-left:10px;
+    max-width:40%;
+}
+.gridtext-img {
+    margin-left: auto;
+    max-width:40%;
+    max-height:90%;
+    position:absolute;
+    right:10px;
+    top:10px;
+    border-radius:10px;
 }
 
 @keyframes about-anim {
