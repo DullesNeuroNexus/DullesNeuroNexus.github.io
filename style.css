@@ -60,12 +60,9 @@ html::-webkit-scrollbar { /* WebKit */
     z-index:1;
     font-size: clamp(10pt, 8vw, 90pt);
     font-family: "Liberation Sans";
-    margin:10px;
-    margin-left:-300px;
-    margin-right:-300px;
+    margin: 10px -300px 10px -300px;
     text-align:center;
-    padding-top:100px;
-    padding-bottom:100px;
+    padding: calc(50px + 5vw) 0px calc(50px + 5vw) 0px;
     background-image: url("media/vectorgraphics/brain.svg");
     background-position:50%;
     background-size:30%;
@@ -75,15 +72,15 @@ html::-webkit-scrollbar { /* WebKit */
 h1.graybar-caption {
     font-family: "Liberation Sans";
     color: white;
-    font-size: clamp(10pt, 3vw, 50pt); 
+    font-size: clamp(10pt, 5vw, 50pt); 
     width:20%;
-    margin-left:1vw;
+    margin-left:0.5vw;
     
 }
 p.graybar-caption {
     font-family: "Liberation Sans";
     color: white;
-    font-size: clamp(5pt, 2vw, 20pt); width:45%;
+    font-size: clamp(7pt, 2vw, 20pt); width:45%;
 }
 
 #graybar {
@@ -93,7 +90,7 @@ p.graybar-caption {
     display: flex;
     place-items: center;
     background:#6969aa;
-    height: clamp(70px, 20vw, 400px);
+    height: clamp(70px, 40vw, 400px);
     margin: -10px;
     padding-left:20px;
     padding-right:20px;
@@ -102,7 +99,7 @@ p.graybar-caption {
 }
 
 #placeholder2 {
-    height:20px;
+    height:1vw;
     background: #1040aa;
     padding:10px;
     margin:-10px;
@@ -160,9 +157,9 @@ p.graybar-caption {
 
 #members {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px , 1fr));
-    column-gap:10px;
-    row-gap:10px;
+    grid-template-columns: repeat(auto-fit, minmax(400 , 1fr));
+    column-gap:1vw;
+    row-gap:1vw;
     width:90%;
     margin: 0 auto;
     position: relative;
