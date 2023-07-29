@@ -1,5 +1,11 @@
 html {
     overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+}
+html::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
 
 @font-face {
@@ -24,14 +30,14 @@ html {
     top:5px;
     right:0;
     position:absolute;
-    margin-right:70px;
+    margin-right:1vw;
 }
 
 #topbar {
     background: #566987;
     margin: -10px;
     padding: 30px;
-    font-size: 15pt;
+    font-size: clamp(8pt, 1vw, 50pt);
     font-family: Arial;
     position: sticky;
     top:-1px;
@@ -41,7 +47,7 @@ html {
 
 .topbar-link {
     color:white;
-    margin-left:40px;
+    margin-left: clamp(1px, 2vw, 50px);
     outline: 0px solid #000000;
 }
 .topbar-link:hover {
@@ -52,7 +58,7 @@ html {
     animation: title-anim 1.6s ease 0s 1 normal forwards;
     position:relative;
     z-index:1;
-    font-size: 90pt;
+    font-size: clamp(10pt, 8vw, 90pt);
     font-family: "Liberation Sans";
     margin:10px;
     margin-left:-300px;
@@ -66,9 +72,18 @@ html {
     background-repeat: repeat-x;
 }
 
-.graybar-caption {
+h1.graybar-caption {
     font-family: "Liberation Sans";
     color: white;
+    font-size: clamp(10pt, 3vw, 50pt); 
+    width:20%;
+    margin-left:1vw;
+    
+}
+p.graybar-caption {
+    font-family: "Liberation Sans";
+    color: white;
+    font-size: clamp(5pt, 2vw, 20pt); width:45%;
 }
 
 #graybar {
@@ -78,7 +93,7 @@ html {
     display: flex;
     place-items: center;
     background:#6969aa;
-    height: 400px;
+    height: clamp(70px, 20vw, 400px);
     margin: -10px;
     padding-left:20px;
     padding-right:20px;
@@ -98,7 +113,7 @@ html {
     font-family: "Liberation Sans";
     text-align:center;
     padding:10px;
-    font-size:50px;
+    font-size:clamp(5pt, 5vw, 50pt);
     background:#47acd7;
     margin:-30px;
     margin-top:10px;
@@ -137,7 +152,7 @@ html {
     animation: about-anim 1.6s ease 0s 1 normal forwards;
     position: relative;
     z-index: 1;
-    font-size: 80pt;
+    font-size: 8vw;
     font-family: "Liberation Sans";
     text-align: center;
     color:#fff;
