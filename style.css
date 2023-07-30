@@ -37,7 +37,7 @@ html::-webkit-scrollbar { /* WebKit */
     background: #566987;
     margin: -10px;
     padding: 30px;
-    font-size: clamp(8pt, 1vw, 50pt);
+    font-size: clamp(12pt, 1vw, 50pt);
     font-family: Arial;
     position: sticky;
     top:-1px;
@@ -174,15 +174,17 @@ p.graybar-caption {
     min-height: 250px;
     border: 2px solid;
     position:relative;
-    transition: all .2s ease-in-out; 
+    transition: all .3s ease; 
 }
 .gridtext-div:hover { 
-    transform: scale(1.05); 
+    transform: scale(1.08);
+    z-index:10;
 }
 
 .gridtext-name {
     font-family: "Liberation Sans";
     margin-left: 10px;
+    max-width:55%;
 }
 .gridtext-role {
     font-family: 'Raleway Light';
@@ -192,7 +194,21 @@ p.graybar-caption {
 .gridtext-desc {
     font-family: 'Raleway Light';
     margin-left:10px;
+    margin-top:-5px;
     max-width:40%;
+}
+.gridtext-contact {
+    font-family: 'Raleway Light';
+    font-size: clamp(4pt, 0.8vw, 9pt);
+    margin-left:10px;
+    max-width:40%;
+}
+.gridtext-link {
+    text-decoration:none;
+}
+.gridtext-link:link, .gridtext-link:visited {
+    color:#5b1074;
+    font-weight: bold;
 }
 .gridtext-img {
     margin-left: auto;
