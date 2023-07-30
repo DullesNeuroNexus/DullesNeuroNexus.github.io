@@ -174,7 +174,12 @@ p.graybar-caption {
     min-height: 250px;
     border: 2px solid;
     position:relative;
+    transition: all .2s ease-in-out; 
 }
+.gridtext-div:hover { 
+    transform: scale(1.05); 
+}
+
 .gridtext-name {
     font-family: "Liberation Sans";
     margin-left: 10px;
