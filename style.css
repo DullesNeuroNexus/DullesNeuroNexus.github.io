@@ -27,7 +27,7 @@ html::-webkit-scrollbar { /* WebKit */
 }
 
 .topbar-right {
-    top:5px;
+    top:7px;
     right:0;
     position:absolute;
     margin-right:1vw;
