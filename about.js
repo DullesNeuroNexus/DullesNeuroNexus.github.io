@@ -25,7 +25,7 @@ let placeholder = document.querySelector('#members');
 let out = "";
 
 for(let member of members){
-    
+    let z = member.linkedin;
     out += `
     <div class="gridtext-div">
         <h3 class="gridtext-role">${member.role}</h3>
@@ -33,7 +33,7 @@ for(let member of members){
         <p class="gridtext-desc">${member.desc}</p>
     `;
     if (member.mail) out += `<a href = "${member.mail}" class="gridtext-link" target="_blank"><p class="gridtext-contact">E-Mail: ${member.mail}</p></a>`;
-    if (member.linkedin) out += `<a href = "${member.linkedin}" class="gridtext-link" target="_blank"><p class="gridtext-contact">LinkedIn: ${member.linkedin}</p></a>`
+    if (member.linkedin) out += `<a href = "${z}" class="gridtext-link" target="_blank"><p class="gridtext-contact">LinkedIn: ${z.slice(1+z.indexOf('.'))}</p></a>`
     if (member.pic) out += `<img class="gridtext-img" src="media/officers/${member.pic}" alt="A photo of ${member.name}">`;
     
     out += `
