@@ -32,7 +32,7 @@ for(let member of members){
         <h2 class="gridtext-name">${member.name}</h2>
         <p class="gridtext-desc">${member.desc}</p>
     `;
-    if (member.mail) out += `<a href = "${member.mail}" class="gridtext-link"><p class="gridtext-contact">Gmail: ${member.mail}</p></a>`;
+    if (member.mail) out += `<a href = "${member.mail}" class="gridtext-link" target="_blank"><p class="gridtext-contact">E-Mail: ${member.mail}</p></a>`;
     if (member.linkedin) out += `<a href = "${member.linkedin}" class="gridtext-link" target="_blank"><p class="gridtext-contact">LinkedIn: ${member.linkedin}</p></a>`
     if (member.pic) out += `<img class="gridtext-img" src="media/officers/${member.pic}" alt="A photo of ${member.name}">`;
     
